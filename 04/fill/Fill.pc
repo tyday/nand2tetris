@@ -1,0 +1,28 @@
+
+
+// Put your code here.
+    // There are 256 rows
+    // 512 pixels per row
+    // 32 Registers per row
+    // 8192 total Registers
+    @SCREEN
+    D=A
+    @8192
+    D=D+A
+    @lastScreenRegister
+    M=D
+
+
+// initialize
+
+(BLACK)
+    // There are 256 rows
+    // 512 pixels per row
+    // 32 Registers per row
+    // 8192 total Registers
+
+    // i = Screen
+(BLOOP)
+    // While i < lastScreenRegister
+    // memory at i = -1
+    // i++
